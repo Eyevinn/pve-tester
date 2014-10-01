@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  #wrap
+    div.container
+      #logo
+        img.center(src='/images/logo-eyevinn.png')
+      div.description
+        p Does my browser support Premium Video Extensions?
+      div.row
+        #mse.col-md-4.box.bg-no
+          span.pve MSE
+        #eme.col-md-4.box.bg-no
+          span.pve EME
+        #crypto.col-md-4.box.bg-no
+          span.pve WebCrypto
+      #browserinfo.row
+        #useragent
+        #mseinfo
+        #emeinfo
+        #cryptoinfo
+    #push
+  #footer
+    div.container
+      p.muted.credit Developed by Eyevinn (c) 2014 (Eyevinn Labs)

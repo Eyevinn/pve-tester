@@ -1,0 +1,72 @@
+html,
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100%;
+}
+a {
+  color: #00b7ff;
+}
+.container {
+  width: auto;
+  max-width: 680px;
+}
+.container .credit {
+  margin: 20px 0;
+}
+#push,
+#footer {
+  height: 60px;
+}
+#footer {
+  background-color: #f5f5f5;
+}
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -60px;
+}
+@media (max-width: 767px) {
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-left: 20px;
+  }
+}
+#logo {
+  padding: 20px;
+}
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.description {
+  font: 20pt "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 20px;
+  text-align: center;
+}
+#browserinfo {
+  text-align: center;
+  margin: 40px;
+  font-size: 8pt;
+  color: #808080;
+}
+.box {
+  height: 100px;
+  border: solid 1px;
+  text-align: center;
+}
+.bg-no {
+  background-color: #f00;
+}
+.bg-yes {
+  background-color: #008000;
+}
+span.pve {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 100px;
+  color: #fff;
+}
