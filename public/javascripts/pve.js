@@ -27,14 +27,14 @@ if (!!!mediaKeys) {
   emehtml = emehtml + (clearkey?"CLEARKEY ":"") + (playready?"PLAYREADY ":"") + 
     (widevine?"WIDEVINE ":"") + (access?"ACCESS ":"") + (fairplay?"FAIRPLAY ":"");
   if (!clearkey && !playready && !widevine && !access && !fairplay) {
-    $("#eme").removeClass("bg-yes").addClass("bg-no");
+//    $("#eme").removeClass("bg-yes").addClass("bg-no");
+    $("#emeinfo").html(emehtml + 'Unknown CDM');
   } else {
     $("#emeinfo").html(emehtml);
   }
 }
 
-var webCrypto = window.Crypto || window.MSCrypto || window.WebKitCrypto;
-console.log(webCrypto);
+var webCrypto = window.crypto || window.msCrypto;
 if (!!!webCrypto) {
   $("#crypto").removeClass("bg-yes").addClass("bg-no");
 } else {
